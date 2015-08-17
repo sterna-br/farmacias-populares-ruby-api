@@ -1,7 +1,5 @@
 require 'grape'
 require 'model/farmacia'
-require 'api/v1/entity/farmacia'
-require 'api/v1/entity/error'
 
 module API
 

@@ -9,7 +9,7 @@ module API
   module V1
 
     class Base < Grape::API
-      version 'v1', :using => :header, :vendor => 'alienlabz', :format => :json
+      version 'v1', :using => :header, :vendor => 'serpro', :format => :json
 
       mount API::V1::Farmacia => '/'
     end
