@@ -1,1 +1,1 @@
-Esta é uma API criada com o intuito de exemplificar o uso do Grape com boas práticas na criação de APIs RESTful.
+Esta API é usada pelo exemplo de farmácias populares com o Sterna. Os dados apresentados por esta API foram obtidos do portal Dados.gov.br do Governo Federal.
