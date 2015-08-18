@@ -6,6 +6,8 @@ module Model
   class Farmacia
     include MongoMapper::Document
 
+    MAX_TOTAL = 50
+
     set_collection_name "farmacia"
 
     key :coordinates, Array
@@ -16,8 +18,8 @@ module Model
     key :cidade, String
     key :uf, String
 
-    def self.nearest(coords, distance)
-      where(:coordinates => {'$near' => coords, '$maxDistance' => distance}).limit(50)
+    def self.nearest(coords, distance, quantity)
+      where(:coordinates => {'$near' => coords, '$maxDistance' => distance/111.12}).limit(quantity || MAX_TOTAL)
     end
 
     def self.by_state(state)
